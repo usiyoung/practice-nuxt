@@ -37,10 +37,8 @@ More information about the usage of this directory in [the documentation](https:
 
 ### `layouts`
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
+`<Nuxt/>` 는 `<RouterView/>` 와 동일한 역할
+레이아웃 폴더 안에 `<Nuxt/>` 를 지정해주면 라우터가 해당 url에 맞게 페이지 폴더안 vue 파일 핸들링
 ### `pages`
 
 페이지 폴더 안에 `*.vue` 생성시 파일 기반의 자동 라우팅 생성
