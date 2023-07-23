@@ -43,9 +43,32 @@ More information about the usage of this directory in [the documentation](https:
 
 ### `pages`
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+페이지 폴더 안에 `*.vue` 생성시 파일 기반의 자동 라우팅 생성
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+
+```bash
+# .nuxt/router.js
+export const routerOptions = {
+  mode: 'history',
+  base: '/',
+  linkActiveClass: 'nuxt-link-active',
+  linkExactActiveClass: 'nuxt-link-exact-active',
+  scrollBehavior,
+
+  routes: [{
+    # main.vue 파일 추가시 자동 생성
+    path: "/main",
+    component: _97f29cac,
+    name: "main"
+  }, {
+    path: "/",
+    component: _a377409e,
+    name: "index"
+  }],
+
+  fallback: false
+}
+```
 
 ### `plugins`
 
